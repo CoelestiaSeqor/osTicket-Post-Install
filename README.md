@@ -22,80 +22,100 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
+Certainly! Here's the updated step-by-step guide with the string placed before each step:
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 Step 1: Log in to the Admin Panel
+
 1. Open a web browser and navigate to the osTicket URL (e.g., `http://localhost/osticket`).
 2. Log in using the administrator account credentials you provided during the installation.
 
-Step 2: Configure General Settings
-1. Click on the "Admin Panel" tab at the top.
-2. In the sidebar, click on "Settings" and then select "General."
-3. Review and modify the general settings as per your requirements. Pay attention to the following options:
-   - Default Department: Choose the default department for incoming tickets.
-   - Default Page Size: Set the number of tickets displayed per page.
-   - Default Timezone: Verify the timezone is correctly set.
-   - Default Language: Choose the default language for the help desk interface.
-   - Ticket Number Format: Customize the format of the ticket numbers.
-   - Enable Knowledge Base: Enable or disable the built-in knowledge base feature.
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-Step 3: Set up Email Configuration
-1. In the sidebar, click on "Settings" and then select "Email."
-2. Configure the email settings to enable osTicket to send and receive emails. Pay attention to the following options:
-   - Email Fetching: Set up POP3/IMAP email fetching for automatic ticket creation.
-   - Outgoing Email: Provide the SMTP server details for outgoing email notifications.
-   - Email Templates: Customize email templates according to your organization's branding and preferences.
+Step 2: Configure Roles
 
-Step 4: Customize Help Topics and Forms
-1. In the sidebar, click on "Manage" and then select "Help Topics."
-2. Edit or create new help topics that match the support categories or subjects your organization deals with.
-3. Customize the forms associated with each help topic to capture the required information from users when submitting tickets.
+1. In the sidebar, click on "Agents" and then select "Roles."
+2. Create a role named "Supreme Admin" or as desired.
 
-Step 5: Manage Agents and User Accounts
-1. In the sidebar, click on "Manage" and then select "Agents."
-2. Add new agents and assign them to specific departments or roles.
-3. Set their permissions and access levels as per their responsibilities.
-4. Similarly, manage user accounts by clicking on "Users" in the "Manage" section. You can add, edit, and disable user accounts.
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-Step 6: Configure Security and Access
-1. In the sidebar, click on "Settings" and then select "Security."
-2. Adjust security settings based on your organization's requirements. Pay attention to the following options:
-   - Agent Authentication: Choose the method of authentication for agents (e.g., password-based, LDAP, or Active Directory).
-   - CAPTCHA: Enable CAPTCHA to prevent automated submissions.
-   - API: Control access to the osTicket API.
+Step 3: Configure Departments
 
-Step 7: Customize the Help Desk Interface
-1. In the sidebar, click on "Settings" and then select "Style."
-2. Customize the look and feel of the help desk interface by modifying colors, logos, and other visual elements.
-3. Preview the changes in real-time and save them once you are satisfied.
+1. In the sidebar, click on "Agents" and then select "Departments."
+2. Create departments such as "System Administrators" based on your organizational structure.
 
-Step 8: Enable and Configure Plugins (Optional)
-1. osTicket supports various plugins to extend its functionality. In the sidebar, click on "Manage" and then select "Plugins."
-2. Browse the available plugins and install the ones that meet your requirements.
-3. Configure the plugin settings as per the documentation provided by the plugin authors.
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
 
-Congratulations! You have completed the post-installation configuration for osTicket. You can now start using the help desk system to manage and respond to support tickets efficiently.
+Step 4: Configure Teams
+
+1. In the sidebar, click on "Agents" and then select "Teams."
+2. Create teams such as "Level I Support" and "Level II Support."
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Step 5: Allow anyone to create tickets
+
+1. In the sidebar, click on "Settings" and then select "User Settings."
+2. Set the "Registration Required" option to "Require registration and login to create tickets."
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Step 6: Configure Agents (workers)
+
+1. In the sidebar, click on "Agents" and then select "Add New."
+2. Add agents such as "Jane" and "John" and specify their details and roles.
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Step 7: Configure Users (customers)
+
+1. In the agent panel, click on "Users" and then select "Add New."
+2. Add users such as "Karen" and "Ken" and specify their details.
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Step 8: Configure SLA
+
+1. In the admin panel, click on "Manage" and then select "SLA."
+2. Create SLAs such as "Sev-A" (1 hour, 24/7), "Sev-B" (4 hours, 24/7), and "Sev-C" (8 hours, business hours).
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Step 9: Configure Help Topics
+
+1. In the admin panel, click on "
+
+Manage" and then select "Help Topics."
+2. Create help topics such as "Business Critical Outage," "Personal Computer Issues," "Equipment Request," and "Password Reset."
+
+Remember to replace "localhost" with the appropriate hostname or IP address if accessing the osTicket installation from a different machine.
 
 <h2>Configuration Steps</h2>
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
