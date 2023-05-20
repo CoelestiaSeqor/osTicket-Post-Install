@@ -22,6 +22,17 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
+1. Configure roles.
+2. Configure departments.
+3. Configure teams.
+4. Allow anyone to create tickets.
+5. Configure agents (workers).
+6. Configure users (customers).
+7. Configure SLA (Service Level Agreement).
+8. Configure help topics.
+
+<h2>Configuration Steps</h2>
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -113,5 +124,3 @@ Step 9: Configure Help Topics
 2. Create help topics such as "Business Critical Outage," "Personal Computer Issues," "Equipment Request," and "Password Reset."
 
 Remember to replace "localhost" with the appropriate hostname or IP address if accessing the osTicket installation from a different machine.
-
-<h2>Configuration Steps</h2>
