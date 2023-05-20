@@ -109,9 +109,7 @@ Step 8: Configure SLA
 
 Step 9: Configure Help Topics
 
-1. In the admin panel, click on "
-
-Manage" and then select "Help Topics."
+1. In the admin panel, click on "Manage" and then select "Help Topics."
 2. Create help topics such as "Business Critical Outage," "Personal Computer Issues," "Equipment Request," and "Password Reset."
 
 Remember to replace "localhost" with the appropriate hostname or IP address if accessing the osTicket installation from a different machine.
