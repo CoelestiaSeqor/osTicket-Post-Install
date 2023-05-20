@@ -22,11 +22,57 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+Step 1: Log in to the Admin Panel
+1. Open a web browser and navigate to the osTicket URL (e.g., `http://localhost/osticket`).
+2. Log in using the administrator account credentials you provided during the installation.
+
+Step 2: Configure General Settings
+1. Click on the "Admin Panel" tab at the top.
+2. In the sidebar, click on "Settings" and then select "General."
+3. Review and modify the general settings as per your requirements. Pay attention to the following options:
+   - Default Department: Choose the default department for incoming tickets.
+   - Default Page Size: Set the number of tickets displayed per page.
+   - Default Timezone: Verify the timezone is correctly set.
+   - Default Language: Choose the default language for the help desk interface.
+   - Ticket Number Format: Customize the format of the ticket numbers.
+   - Enable Knowledge Base: Enable or disable the built-in knowledge base feature.
+
+Step 3: Set up Email Configuration
+1. In the sidebar, click on "Settings" and then select "Email."
+2. Configure the email settings to enable osTicket to send and receive emails. Pay attention to the following options:
+   - Email Fetching: Set up POP3/IMAP email fetching for automatic ticket creation.
+   - Outgoing Email: Provide the SMTP server details for outgoing email notifications.
+   - Email Templates: Customize email templates according to your organization's branding and preferences.
+
+Step 4: Customize Help Topics and Forms
+1. In the sidebar, click on "Manage" and then select "Help Topics."
+2. Edit or create new help topics that match the support categories or subjects your organization deals with.
+3. Customize the forms associated with each help topic to capture the required information from users when submitting tickets.
+
+Step 5: Manage Agents and User Accounts
+1. In the sidebar, click on "Manage" and then select "Agents."
+2. Add new agents and assign them to specific departments or roles.
+3. Set their permissions and access levels as per their responsibilities.
+4. Similarly, manage user accounts by clicking on "Users" in the "Manage" section. You can add, edit, and disable user accounts.
+
+Step 6: Configure Security and Access
+1. In the sidebar, click on "Settings" and then select "Security."
+2. Adjust security settings based on your organization's requirements. Pay attention to the following options:
+   - Agent Authentication: Choose the method of authentication for agents (e.g., password-based, LDAP, or Active Directory).
+   - CAPTCHA: Enable CAPTCHA to prevent automated submissions.
+   - API: Control access to the osTicket API.
+
+Step 7: Customize the Help Desk Interface
+1. In the sidebar, click on "Settings" and then select "Style."
+2. Customize the look and feel of the help desk interface by modifying colors, logos, and other visual elements.
+3. Preview the changes in real-time and save them once you are satisfied.
+
+Step 8: Enable and Configure Plugins (Optional)
+1. osTicket supports various plugins to extend its functionality. In the sidebar, click on "Manage" and then select "Plugins."
+2. Browse the available plugins and install the ones that meet your requirements.
+3. Configure the plugin settings as per the documentation provided by the plugin authors.
+
+Congratulations! You have completed the post-installation configuration for osTicket. You can now start using the help desk system to manage and respond to support tickets efficiently.
 
 <h2>Configuration Steps</h2>
 
